@@ -13,7 +13,7 @@ def dashboard():
     """Logged-in User Dashboard."""
     return render_template(
         "dashboard.jinja2",
-        title="GPA Dictionary",
+        title="SectionSeekerAI",
         template="dashboard-template",
         current_user=current_user,
         body="You are now logged in!",

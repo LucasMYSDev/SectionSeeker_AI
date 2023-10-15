@@ -65,26 +65,6 @@ function updateDocumentSelect() {
     }
 }
 
-// function deleteFolder(folderId) {
-//     fetch(`/delete-folder/${folderId}`, {
-//         method: 'DELETE',
-//     })
-//     .then((response) => response.json())
-//     .then((data) => {
-//         if (data.success) {
-//             updateFolderSelect();
-//             fetchFolders();
-//             // fetchDocuments();
-//             fetchDocumentsForContents
-//             updateDocumentSelect();
-//         } else {
-//             console.error('Error deleting folder:', data.message);
-//         }
-//     })
-//     .catch((error) => {
-//         console.error('Error:', error);
-//     });
-// }
 
 async function deleteFolder(folderId) {
     try {
