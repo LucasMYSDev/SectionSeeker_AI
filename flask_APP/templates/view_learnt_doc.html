@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='dist/css/previous_main.css') }}">
+<div class="container text-center"> <!-- Added text-center class -->
+    <h1 class="document-processed-title">Document Processed</h1>
+
+    <!-- Display the HTML table -->
+    {{ table | safe }}
+
+    <h1>{{ message }}</h1>
+    <a href="/contents" class="return-button">Return to Main Page</a>
+    <!-- Made changes to class and style attributes -->
+</div>

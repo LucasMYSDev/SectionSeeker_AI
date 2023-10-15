@@ -1,0 +1,103 @@
+{% extends "layout.jinja2" %}
+
+{% block pagestyles %}
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/previous_main.css') }}">
+{% endblock %}
+
+{% block content %}
+{% include 'navbar.jinja2' %}
+<div id="contents-page" class="container-fluid" style="min-height: 100vh;">
+  <div class="container mt-4">
+
+    <!-- Folders Section -->
+<div class="section-box">
+<h2 class="text-center">Folders</h2> <!-- Center-aligned -->
+    <form id="folder-form" class="form-group">
+        <div class="d-flex justify-content-center mb-2">
+            <input type="text" id="folder-name" placeholder="Enter folder name" class="form-control" style="width: 60%; max-width: 400px;" required>
+        </div>
+        <div class="d-flex justify-content-center flex-column align-items-center"> <!-- Added flex-column and align-items-center -->
+            <button type="submit" class="btn btn-primary mt-2 choose-file-container" style="background: #5eb9d7; color: white; border-radius: 2px; border: 1px solid #5eb9d7; width: 42%; max-width: 250px;">Create</button>
+
+
+        </div>
+    </form>
+    <div class="table-container"> <!-- New wrapper div -->
+        <table class="table table-bordered table-size"> <!-- table-bordered class added -->
+            <tr>
+                <th>Folder Name</th>
+                <th>Delete</th>
+            </tr>
+            <!-- Rows will be dynamically inserted here by JavaScript -->
+        </table>
+    </div>
+</div>
+
+<!-- Upload Document Section -->
+<div class="section-box">
+  <div class="section-container">
+      <div id="upload-section" class="mt-4 text-center">
+        <h2>Upload Document</h2>
+        <label for="folder-select">Select Folder to upload:</label>
+        <div class="d-flex justify-content-center">
+            <select id="folder-select" class="form-control" style="width: 60%; max-width: 400px;">
+                <option disabled selected>Loading folders...</option>
+            </select>
+        </div>
+    
+        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data" class="form-group text-center">
+            <input type="hidden" name="folder_id" id="folder-id">
+            <input type="file" name="file" accept=".docx" id="file-input" style="display: none;">
+            <div class="choose-file-container d-inline-block" style="border: 1px solid #d4d9e3; padding: 10px; text-align: center; width: 60%; max-width: 400px;">
+                <label for="file-input" class="btn" style="background: #5eb9d7; color: white; border-radius: 2px; border: 1px solid #5eb9d7; width: 80%;">Choose File</label>
+                
+                <div id="file-name" style="display: inline-block; margin-left: 10px;"></div> <!-- Changed to div for automatic line break -->
+            </div>
+            <p class="loading-text" style="text-align: center;">Average uploading time: 2 minutes</p> <!-- Separate paragraph for average uploading time -->
+            
+
+            <div class="choose-file-container d-inline-block" style="border: 1px solid #d4d9e3; padding: 10px; text-align: center; width: 60%; max-width: 400px;">
+
+            <button type="submit" class="btn btn-upload mt-2" style="background: #5eb9d7; color: white; border-radius: 2px; border: 1px solid #5eb9d7; width: 80%;">Upload</button>
+            </div>
+        
+        
+        </form>
+        <div class="loading">
+            <div class="loading-content">
+                <span class="loading-text">AI Bot Learning</span>
+                <div class="spinner"></div>
+            </div>
+            <div id="upload-time-message"></div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+</div>
+<!-- Documents Section -->
+<div class="section-box">
+    <div class="section-container">
+        <div class="mt-4">
+            <h2 class="text-center">Documents</h2>
+            <div id="documents-list" class="wider-documents-list"></div>
+
+            
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+{% endblock %}
+
+{% block additionalscripts %}
+  <script src="{{ url_for('static', filename='src/js/previous_main.js') }}"></script>
+{% endblock %}

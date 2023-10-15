@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "flask_login_tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Todd Birchard <toddbirchard@gmail.com>"]
+maintainers = ["Todd Birchard <toddbirchard@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://hackersandslackers.com/flask-login-user-authentication/"
+repository = "https://github.com/toddbirchard/flasklogin-tutorial/"
+documentation = "https://hackersandslackers.com/flask-login-user-authentication/"
+keywords = [
+    "Flask",
+    "Flask-Login",
+    "Authentication",
+    "Users",
+    "Accounts"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask_sqlalchemy = "*"
+flask_login = "*"
+flask_assets = "*"
+pymysql = "*"
+flask_wtf = "*"
+python-dotenv = "*"
+email_validator = "*"
+uWSGI = "*"
+Flask = "*"
+lessc = "^0.1.3"
+
+[tool.poetry.dev-dependencies]
+lesscpy = "*"
+cssmin = "*"
+jsmin = "*"
+isort = "*"
+black = "*"
+
+[build-system]
+requires = ["poetry>=1.1.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+run = "wsgi:app"
+
+[tool.poetry.urls]
+issues = "https://github.com/toddbirchard/flasklogin-tutorial/issues"

@@ -1,0 +1,293 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  background: white;
+  box-shadow: 0 0 5px rgba(65, 67, 144, 0.15);
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 1rem; /* Adjust as needed */
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* General table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#dataframe th {
+  text-align: left !important;
+}
+
+#dataframe td {
+  text-align: left !important;
+}
+
+/* Responsive table design for smaller devices */
+@media screen and (max-width: 800px) {
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+button {
+  background: #5eb9d7;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid #5eb9d7;
+  transition: all .3s ease-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background: white;
+  color: #5eb9d7;
+}
+
+input[type="text"], input[type="file"], select {
+  padding: 5px 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #d4d9e3;
+  font-weight: 200;
+  color: #4d5060;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+input[type="text"]:hover, input[type="file"]:hover, select:hover {
+  border-color: #5eb9d7;
+  background: #d9f6ff;
+}
+
+input[type="text"]:focus, input[type="file"]:focus, select:focus {
+  background: white;
+  border-color: #5eb9d7;
+  box-shadow: unset;
+}
+
+/* Common styles for all sections */
+.section-box {
+  padding: 20px;
+  background: linear-gradient(to right, #f8f9fa, #e6e7e8); /* Add a gradient background */
+  border-radius: 5px;
+  margin-bottom: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Use a custom easing function for smoother transitions */
+  position: relative; /* Relative positioning for pseudo-element */
+  overflow: hidden; /* Hide the overflow for the inner glow effect */
+}
+
+
+.section-box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+.section-box:hover:before {
+  left: 0; /* Move the white overlay to create a smooth glow effect on hover */
+}
+
+
+/* Add this to your existing CSS */
+.wider-documents-list {
+  max-width: 800px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+}
+/* Styles for the table size */
+.table-size {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #d4d9e3;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.loading-dots {
+  display: inline-block;
+  animation: loadingDots 1s infinite;
+}
+
+@keyframes loadingDots {
+  0% { content: '.'; }
+  33% { content: '..'; }
+  66% { content: '...'; }
+}
+
+#ask-page {
+  min-height: 80vh; /* Decreased from 100vh to 80vh */
+}
+
+.container.mt-4 {
+  margin-top: 1rem; /* Adjust as needed */
+}
+
+#ask-page {
+  min-height: 80vh; /* Reduced from 100vh to 80vh */
+}
+
+/* Intro Section Styles */
+.intro-section {
+  padding: 60px 0; /* Generous padding top and bottom */
+  text-align: center; /* Center-align text */
+}
+
+.intro-title {
+  font-size: 32px; /* Large title */
+  color: #333; /* Darker text color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.intro-description {
+  font-size: 18px; /* Description font size */
+  color: #555; /* Darker text color */
+  margin-bottom: 40px; /* Increased space below the paragraph */
+  max-width: 800px; /* Limit width */
+  margin: 0 auto; /* Center block */
+}
+
+
+.intro-how-to-use {
+  margin-top: 20px;
+  font-size: 24px; /* Subheading font size */
+  color: #5eb9d7; /* Theme color */
+  margin-bottom: 20px; /* Space below the subheading */
+}
+
+.intro-steps {
+  max-width: 800px; /* Limit width */
+  margin: 0 auto; /* Center block */
+}
+
+.intro-steps div {
+  font-size: 18px; /* Step font size */
+  color: #555; /* Darker text color */
+  margin-bottom: 10px; /* Space between steps */
+}
+
+
+
+
+.loading {
+  display: none;
+  flex-direction: column; /* Stack the contents vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+}
+
+
+.loading-content {
+  display: flex; /* Flex layout to align items horizontally */
+  align-items: center; /* Center align vertically */
+}
+
+.loading-text {
+  margin-right: 10px; /* Space between text and spinner */
+  color: #5eb9d7; /* Blue color matching the spinner */
+}
+
+#upload-time-message {
+  margin-top: 5px; /* Space above the message */
+  color: #5eb9d7; /* Darker text color */
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.spinner {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  border: 4px solid rgba(94, 185, 215, 0.2); /* Lighter blue color */
+  border-top: 4px solid #5eb9d7; /* Blue color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+/* Upload results*/
+.upload-success-message {
+  color: #5eb9d7; /* Blue color */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.document-processed-title {
+  padding-top: 10px;
+  font-size: 36px;
+  color: #5eb9d7;
+}
+
+.return-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #5eb9d7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.document-item {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.document-item:hover {
+  background-color: #f5f5f5;
+}
+
+.document-item.selected {
+  background-color: #5eb9d7;
+  color: white;
+}
+
+.documents-container {
+  max-height: 300px;  /* or any suitable height */
+  overflow-y: auto;
+}
+

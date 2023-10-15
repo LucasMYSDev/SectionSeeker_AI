@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ url_for('main_bp.dashboard') }}">
+    <img src="{{ url_for('static', filename='dist/img/SectionSeekerAI.png') }}" alt="Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+    GPA AI Search Bot <!-- Changed name here -->
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('main_bp.contents') }}">Contents</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('main_bp.chat') }}">Chat</a></li>
+      </ul>
+      {% if current_user.is_authenticated %}
+          <span class="navbar-text ml-auto" style="color: white;">{{ current_user.name }}</span>
+          <a class="btn btn-secondary ml-2" href="{{ url_for('main_bp.logout') }}">Log out</a>
+      {% endif %}
+  </div>
+</nav>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/previous_main.css') }}">
+</head>
+<body>
+    {% include 'navbar.jinja2' %}
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+        <div class="pl-4 pr-4" style="width: 80%;">
+            <div class="container mt-4 text-center">
+                <h1>{{ message }}</h1>
+                <p class="upload-success-message">Upload successfully completed!</p>
+
+                <a href="/contents" class="return-button">Return to Main Page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
