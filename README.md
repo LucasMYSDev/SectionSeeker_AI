@@ -1,8 +1,8 @@
 
-# 🤖 GPA AI Search Bot
+# 🤖 SectionSeekerAI
 
 ## 📌 Overview
-The **GPA AI Search Bot** is an innovative and advanced search tool designed to pinpoint relevant data sections within uploaded DOCX files. It responds to user-provided keywords or entire sentences. Unlike traditional search functionalities, this tool employs cutting-edge AI models to comprehend and address user queries with unparalleled precision.
+The **SectionSeekerAIt** is an innovative and advanced search tool designed to pinpoint relevant data sections within uploaded DOCX files. It responds to user-provided keywords or entire sentences. Unlike traditional search functionalities, this tool employs cutting-edge AI models to comprehend and address user queries with unparalleled precision.
 
 ## ✨ Core Features
 - **DOCX File Support**: Instantly render your `DOCX` files searchable.
@@ -14,7 +14,8 @@ At its core, the AI Search Bot adopts an `embedding search technique`, utilizing
  It further integrates the `gpt-3.5-turbo-16k` model for `AI-driven filtering` during its learning journey. Such an approach empowers users to converse in natural language, 
  breaking free from traditional tool constraints, like the `"find"` feature in standard browsers.
 
-## 📂 Functional Pages
+
+## 📂 SectionSeekerAI Website Pages
 1. **Contents Page**
 - Organize and manage with folders.
     - Ability to delete folders and remove uploaded documents.
@@ -26,106 +27,31 @@ At its core, the AI Search Bot adopts an `embedding search technique`, utilizing
    - Dive into a direct conversation with the search bot post-document upload.
 
 
-## 🛠 Prerequisites
-1. **OpenAI API Key**: Secure an OpenAI API key to operate this bot. Once in hand, feed this into the `.env` file.
-2. **Virtual Environment**: It's recommended to set up and use a virtual environment to run the project. Follow the steps below to set it up.
+## How to Use SectionSeekerAI
 
-### Setting Up Virtual Environment
+SectionSeekerAI leverages the "heading styles" feature in Microsoft Word. This feature is found in the Styles Pane of the Microsoft Word interface. Specifically, SectionSeekerAI identifies sections that have titles styled with any variation containing the word "heading." It detects the beginning of a section based on this style and recognizes the end of that section when another styled title appears.
 
-#### macOS/Linux:
+Users don't need to style every subsection; SectionSeekerAI employs GPT filtering to break down extensive sections into smaller subsections. Therefore, users can merely style prominent sections, such as "Section 1" or "Section 2." However, it's essential to be aware that exceptionally long sections might be truncated, leading to potential information loss. Typically, keeping each section limited to the content of one page is recommended.
 
-1. **Creation**:
-   To create a virtual environment, use the built-in `venv` module:
-   ```bash
-   python3 -m venv myenv
-   ```
-   Replace `myenv` with your desired environment name.
+## Limitations of SectionSeekerAI for Documents
 
-2. **Activation**:
-   Activate the virtual environment:
-   ```bash
-   source myenv/bin/activate
-   ```
+Please note the following constraints when using SectionSeekerAI:
 
+- **Development Stage**: As SectionSeekerAI is still in its early development stages, it currently supports only `.docx` file types.
+  
+- **Document Complexity**: The tool may not function optimally with `.docx` files containing images or intricate structures. It is best suited for plain text documents. This is ideal for business-related documents like company handbooks or business agreements, which usually have a straightforward format.
+  
+- **Styles Dependency**: SectionSeekerAI primarily uses heading styles to demarcate sections. If a `.docx` file has pre-existing styles that aren't correctly assigned, the tool might still process the document, but there might be unintended segmentations. For instance, what should be a single section might be split into two. As a result, when users search for specific sections based on queries, the returned results might not be entirely accurate.
 
-
-#### Windows:
-
-1. **Creation**:
-   Open the command prompt and run:
-   ```bash
-   python -m venv myenv
-   ```
-   Again, replace `myenv` with your desired environment name.
-
-2. **Activation**:
-   Activate the virtual environment:
-   ```bash
-   myenv\Scripts\activate
-   ```
-
-## pip version error
-To avoid possible error caused due to pip version, please upgrade pip before installing 
-    library requirements below <br>
-    
-   **pip upgrade command**:
-   ```bash
-   pip install --upgrade pip
-   ```
-
-### 📥 Installation (After Creation of Virtual Environment and Activated)
-1. **Library Setup (Mac)**: 
-    ```bash
-    pip install -r requirements_mac.txt
-    ```
-
-2. **Library Setup (Windows)**: 
-    ```bash
-    pip install -r requirements_windows.txt
-    ```
-
-3. **OpenAI API Key Configuration**:
-    Open the `.env` file and configure as follows:
-    ```bash
-    OPENAI_API_KEY=your_openai_api_key_here
-    ```
-
-## 🚀 Launching the App
-
-To get started with the app, follow the instructions below:
-
-### 1. Running the App
-
-Execute the following command in your terminal:
-
-```bash
-python wsgi.py
-```
-
-### 2. Accessing the Web Interface
-
-After executing the command, a link will be generated pointing to the website running locally. Copy this link to your browser to access the website.
-
-### 3. Account Creation
-
-When accessing the website, you'll land on a login page. If it's your first time, click on the **Sign Up** button to create a new account.
-
-
-### Exiting Virtual Environment:
-
-To deactivate the virtual environment and return to your system's Python:
-```bash
-deactivate
-```
-
+To achieve the best results, ensure your document adheres to the guidelines and is compatible with the tool's current capabilities.
 
 
 ## 📂 Project Structure
-- **Main Directory**: `GPA_Dict_AI_Search_Bot`
+- **Main Directory**: `SectionSeeker_AI`
     - `requirements.txt`: Enumerates the essential libraries.
     - `wsgi.py`: The central code initiating the app.
     - `config.py`: Orchestrates the API key and other pivotal configurations.
-- **Subdirectory**: `flask_APP` (Nestled within `GPA_Dict_AI_Search_Bot`)
+- **Subdirectory**: `flask_APP` (Nestled within `SectionSeeker_AI`)
     - `static`: Home to CSS styling, the app emblem, and other static commodities.
     - `templates`: Plays host to Jinja2 templates for the app's web interface, spanning from login to dashboard and more.
     - `__init__.py`: Spells out the `create_app` function leveraged in `wsgi.py`.
@@ -133,7 +59,7 @@ deactivate
     - `auth.py`: Oversees user registration and login dynamics.
     - `documents.py`: Encompasses primary codes for the search bot web endpoints.
     - `forms.py`: Dedicated to the user sign-up interface.
-    - `GPA_DataBase.db`: Leans on SQLite, safeguarding both uploaded documents and user credentials.
+    - `SectonSeekerAI_DataBase.db`: Leans on SQLite, safeguarding both uploaded documents and user credentials.
     - `helper_function.py`: The backbone of the AI search bot's modus operandi.
     - `models.py`: Paves the path for the database's operations.
     - `routes.py`: Maps out the routes for authenticated pages.
