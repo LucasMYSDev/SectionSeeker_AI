@@ -32,7 +32,30 @@ To test and try SectionSeekerAI:
   - 📄 [Sample Docx](#)
 
 ## 📖 How to Use
-> This section will be updated soon with detailed user instructions.
+
+### **Step 1**: Quick Start
+- Log in using the account details provided in the Quick Start section.
+
+### **Step 2**: Accessing Contents
+- Navigate to the contents page by clicking on "Contents" in the top navigation bar.
+
+### **Step 3**: Managing Documents
+1. Create a new folder.
+2. Select a folder and upload a single document.
+3. After uploading, view your processed documents by selecting "Documents" on the same Contents page.
+
+### **Step 4**: Using Chat
+1. Navigate to the chat page by clicking on "Chat" in the top navigation bar.
+2. Select one or multiple documents to pose questions.
+3. Click on "Ask" to submit your question. (Note: Pressing 'Enter' is not currently supported.)
+4. SectionSeekerAI will return the 5 most relevant sections. Each result will include:
+   - The section name (indicating the document it originates from and its respective section name).
+   - A relatedness score (in percentage).
+   - The actual text from the section identified by SectionSeekerAI.
+
+
+
+
 
 ## Limitations of SectionSeekerAI for Documents
 
