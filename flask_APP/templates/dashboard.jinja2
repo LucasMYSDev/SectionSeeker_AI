@@ -7,24 +7,27 @@
 
 {% block content %}
 {% include 'navbar.jinja2' %}
-<div class="intro-section">
-    <div class="container">
-        <h2 class="intro-title">Welcome to the SectionSeekerAI!</h2>
-        <p class="intro-description">This bot is a search tool designed to find relevant data sections based on user-provided keywords. Simply upload a DOCX file, enter your search keywords, and the bot will display the most relevant information.</p>
+<div class="intro-section" style="text-align: left;">
+    <div class="container" style="text-align: left; padding-left: 50px;">
+        <h2 class="intro-title" style="color: #5eb9d7;">Welcome to the SectionSeekerAI!</h2>
+
+        <p>This bot is a search tool designed to find relevant data sections based on user-provided keywords. Simply upload a DOCX file, enter your search keywords, and the bot will display the most relevant information.</p>
         
         <h3 class="intro-how-to-use">Limitations of docx</h3>
         <p>Our AI bot is optimized for plain text and may encounter difficulties with DOCX files containing images or complex structures. For best results, please ensure your file is predominantly plain text.</p>
         
         <h3 class="intro-how-to-use">How to use the bot?</h3>
-        <div class="intro-steps">
-            <div>1. Upload a DOCX file containing the data you want to search through.</div>
-            <div>2. Enter the keywords you want to search for.</div>
-            <div>3. The bot will process the file and display the most relevant sections.</div>
-        </div>
+        <p class="p">1. Upload a DOCX file containing the data you want to search through.</p>
+        <p class="p">2. Enter the keywords you want to search for.</p>
+        <p class="p">3. The bot will process the file and display the most relevant sections.</p>
+
+        <h3 class="intro-how-to-use">Limitations of SectionSeekerAI for Documents</h3>
+        <p class="p">1. <strong>Development Stage</strong>: As SectionSeekerAI is still in its early development stages, it currently supports only `.docx` file types.</p>
+        <p class="p">2. <strong>Document Complexity</strong>: The tool may not function optimally with `.docx` files containing images or intricate structures. It is best suited for plain text documents. This is ideal for business-related documents like company handbooks or business agreements, which usually have a straightforward format.</p>
+        <p class="p">3. <strong>Styles Dependency</strong>: SectionSeekerAI primarily uses heading styles to demarcate sections. If a `.docx` file has pre-existing styles that aren't correctly assigned, the tool might still process the document, but there might be unintended segmentations. For instance, what should be a single section might be split into two. As a result, when users search for specific sections based on queries, the returned results might not be entirely accurate.</p>
     </div>
 </div>
 {% endblock %}
-
 
 {% block additionalscripts %}
   <script src="{{ url_for('static', filename='src/js/previous_main.js') }}"></script>
