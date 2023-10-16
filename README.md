@@ -8,7 +8,11 @@ The **SectionSeeker AI** is an innovative and advanced search tool designed to p
 - **Dual Search Mode**: Whether it's a specific keyword or a full-fledged sentence, we've got you covered.
 - **Multiple Document Selection**: Why limit to one? Search across several uploaded documents simultaneously.
 
-https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/10d72e69-b8b3-4831-87c6-f38146f9480d
+
+
+https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/8905543a-01df-47c9-9884-1b0427cfe074
+
+
 
 
 
