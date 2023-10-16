@@ -8,7 +8,7 @@ The **SectionSeekerAI** is an innovative and advanced search tool designed to pi
 - **Dual Search Mode**: Whether it's a specific keyword or a full-fledged sentence, we've got you covered.
 - **Multiple Document Selection**: Why limit to one? Search across several uploaded documents simultaneously.
 
-https://github.com/LucasMYS/SectionSeeker_AI/assets/71440362/77576985-1c3e-44d9-94ec-31ed0e0452f6
+https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/1895f70b-c478-4b42-9134-4b6eee8742af
 
 ## 🔧 Technical Details
 SectionSeekerAI adopts an `embedding search technique` utilizing the `text-embedding-ada-002` model from OpenAI. It further integrates the `gpt-3.5-turbo-16k` model for `AI-driven filtering` during its learning journey. Such an approach empowers users to converse in natural language, breaking free from traditional tool constraints, like the `"find"` feature in standard browsers.
