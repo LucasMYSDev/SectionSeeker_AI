@@ -7,6 +7,7 @@ The **SectionSeekerAI** is an innovative and advanced search tool designed to pi
 - **DOCX File Support**: Instantly render your `DOCX` files searchable.
 - **Dual Search Mode**: Whether it's a specific keyword or a full-fledged sentence, we've got you covered.
 - **Multiple Document Selection**: Why limit to one? Search across several uploaded documents simultaneously.
+
 https://github.com/LucasMYS/SectionSeeker_AI/assets/71440362/77576985-1c3e-44d9-94ec-31ed0e0452f6
 
 ## 🔧 Technical Details
