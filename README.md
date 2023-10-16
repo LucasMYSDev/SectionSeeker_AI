@@ -53,6 +53,10 @@ To test and try SectionSeekerAI:
    - A relatedness score (in percentage).
    - The actual text from the section identified by SectionSeekerAI.
 
+https://github.com/LucasMYS/SectionSeeker_AI/assets/71440362/77576985-1c3e-44d9-94ec-31ed0e0452f6
+
+
+
 
 
 
