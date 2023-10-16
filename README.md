@@ -50,7 +50,7 @@ To test and try SectionSeeker AI:
 1. Navigate to the chat page by clicking on "Chat" in the top navigation bar.
 2. Select one or multiple documents to pose questions.
 3. Click on "Ask" to submit your question. (Note: Pressing 'Enter' is not currently supported.)
-4. SectionSeeker AI will return the 5 most relevant sections. Each result will include:
+4. SectionSeekerAI will return the 5 most relevant sections. Each result will include:
    - The section name (indicating the document it originates from and its respective section name).
    - A relatedness score (in percentage).
    - The actual text from the section identified by SectionSeeker AI.

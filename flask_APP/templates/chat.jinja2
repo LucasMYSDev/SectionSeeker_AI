@@ -23,12 +23,12 @@
         </div>
 
         <!-- Input Keywords Section -->
-        <div class="form-group">
-            <h2 class="form-label" for="question-input">Input keywords</h2>
-            <input type="text" id="question-input" class="form-control" placeholder="Enter your keywords here">
-            <button id="ask-button" class="btn btn-primary mt-2 choose-file-container" style="background: #5eb9d7; color: white; border-radius: 2px; border: 1px solid #5eb9d7; width: 100%; max-width: 250px;">Ask</button>
-            <!-- Removed the 'question-response' div -->
-        </div>
+        <form id="question-form">
+        <h2 class="form-label" for="question-input">Ask your question below</h2>
+        <input type="text" id="question-input" class="form-control" placeholder="Go ahead: keyword it or question it, both work!">
+        <button id="ask-button" class="btn btn-primary mt-2 choose-file-container" style="background: #5eb9d7; color: white; border-radius: 2px; border: 1px solid #5eb9d7; width: 100%; max-width: 250px;">Ask</button>
+        </form>
+
 
         <button id="toggleDataframe" class="btn btn-primary mt-2 choose-file-container" style="background: #5eb9d7; color: white; border-radius: 2px; border: 1px solid #5eb9d7; width: 100%; max-width: 250px;">Toggle Top 5 Data Sections</button>
 
@@ -43,6 +43,10 @@
             document.getElementById('toggleDataframe').addEventListener('click', function() {
                 const dataframeContainer = document.getElementById('dataframeContainer');
                 dataframeContainer.style.display = dataframeContainer.style.display === 'none' ? 'block' : 'none';
+            });
+            document.getElementById('question-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the default form submission
+            document.getElementById('ask-button').click();  // Programmatically click the "Ask" button
             });
         </script>
     </div>
