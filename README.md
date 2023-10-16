@@ -41,36 +41,41 @@ To test and try SectionSeeker AI:
 
 ## 📖 How to Use
 
-### **Step 0**: Document Preprocessing
+## 📖 User Guide
 
-- **Section Demarcation**: SectionSeeker AI predominantly uses heading styles for section identification. It harnesses the power of GPT to further refine and categorize large sections into sub-sections.
-- **Efficiency in Heading Styles**: Only a select number of heading styles need to be applied for optimal performance. However, it's noteworthy that enhancing the document with additional heading styles accelerates the SectionSeeker AI's processing speed.
-- **Performance Metrics**: As a benchmark, the example `.docx` file provided in the Quick Start section—with around 4,000 words and appropriate formatting—takes under 15 seconds for processing.
-- **Heading Style Recognition**: SectionSeeker AI recognizes lines as section headings if they employ Microsoft Word styles containing the terms "**Headings**" or "**SubTitle**". Below is an illustrative example of styles that SectionSeeker AI classifies as a heading:
+### **Step 0**: Preparing Your Document
+
+- **Section Identification**: SectionSeeker AI primarily identifies sections through heading styles, but it also uses GPT to categorize larger sections into sub-sections.
+- **Optimal Heading Styles**: For the best results, apply only essential heading styles. However, enriching the document with additional styles improves the AI's processing speed.
+- **Performance Insight**: As a reference, a `.docx` file of about 4,000 words, formatted correctly, is processed in under 15 seconds.
+- **Recognizable Styles**: The AI identifies headings based on Microsoft Word styles with terms like "Headings" or "SubTitle". See the example below for clarification:
   
   ![heading_style_example](https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/3d84de15-7027-4d65-95f7-09c83442637f)
 
+### **Step 1**: Getting Started
 
+- Initiate by logging in with the credentials given in the Quick Start section.
 
-### **Step 1**: Quick Start
-- Log in using the account details provided in the Quick Start section.
+### **Step 2**: Navigating Content
 
-### **Step 2**: Accessing Contents
-- Navigate to the contents page by clicking on "Contents" in the top navigation bar.
+- Access the content page by selecting "Contents" from the main navigation bar.
 
-### **Step 3**: Managing Documents
-1. Create a new folder.
-2. Select a folder and upload a single document.
-3. After uploading, view your processed documents by selecting "Documents" on the same Contents page.
+### **Step 3**: Document Management
 
-### **Step 4**: Using Chat
-1. Navigate to the chat page by clicking on "Chat" in the top navigation bar.
-2. Select one or multiple documents to pose questions.
-3. Click on "Ask" to submit your question or press "Enter"
-4. SectionSeekerAI will return the 5 most relevant sections. Each result will include:
-   - The section name (indicating the document it originates from and its respective section name).
-   - A relatedness score (in percentage).
-   - The actual text from the section identified by SectionSeeker AI.
+1. Add a new folder.
+2. Choose a folder and upload your document.
+3. Review the processed documents by clicking on "Documents" within the Contents page.
+
+### **Step 4**: Engaging with Chat
+
+1. Access the chat interface via the "Chat" option in the navigation bar.
+2. Choose your desired document(s) to inquire about.
+3. Hit "Ask" or simply press "Enter" to submit your question.
+4. The AI will present the top 5 relevant sections, each with:
+   - Document source and section title.
+   - A relevance score (as a percentage).
+   - The extracted text recognized by SectionSeeker AI.
+
 
 
 ## Limitations of SectionSeeker AI for Documents
