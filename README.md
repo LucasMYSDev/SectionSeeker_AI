@@ -8,7 +8,9 @@ The **SectionSeeker AI** is an innovative and advanced search tool designed to p
 - **Dual Search Mode**: Whether it's a specific keyword or a full-fledged sentence, we've got you covered.
 - **Multiple Document Selection**: Why limit to one? Search across several uploaded documents simultaneously.
 
-https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/1895f70b-c478-4b42-9134-4b6eee8742af
+https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/10d72e69-b8b3-4831-87c6-f38146f9480d
+
+
 
 ## 🔧 Technical Details
 SectionSeeker AI adopts an `embedding search technique` utilizing the `text-embedding-ada-002` model from OpenAI. It further integrates the `gpt-3.5-turbo-16k` model for `AI-driven filtering` during its learning journey. Such an approach empowers users to converse in natural language, breaking free from traditional tool constraints, like the `"find"` feature in standard browsers.
@@ -49,7 +51,7 @@ To test and try SectionSeeker AI:
 ### **Step 4**: Using Chat
 1. Navigate to the chat page by clicking on "Chat" in the top navigation bar.
 2. Select one or multiple documents to pose questions.
-3. Click on "Ask" to submit your question. (Note: Pressing 'Enter' is not currently supported.)
+3. Click on "Ask" to submit your question or press "Enter"
 4. SectionSeekerAI will return the 5 most relevant sections. Each result will include:
    - The section name (indicating the document it originates from and its respective section name).
    - A relatedness score (in percentage).
