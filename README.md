@@ -1,7 +1,7 @@
-# 🤖 SectionSeekerAI
+# 🤖 SectionSeeker AI
 
 ## 📌 Overview
-The **SectionSeekerAI** is an innovative and advanced search tool designed to pinpoint relevant data sections within uploaded DOCX files. It responds to user-provided keywords or entire sentences. Unlike traditional search functionalities, this tool employs cutting-edge AI models to comprehend and address user queries with unparalleled precision.
+The **SectionSeeker AI** is an innovative and advanced search tool designed to pinpoint relevant data sections within uploaded DOCX files. It responds to user-provided keywords or entire sentences. Unlike traditional search functionalities, this tool employs cutting-edge AI models to comprehend and address user queries with unparalleled precision.
 
 ## ✨ Core Features
 - **DOCX File Support**: Instantly render your `DOCX` files searchable.
@@ -11,9 +11,9 @@ The **SectionSeekerAI** is an innovative and advanced search tool designed to pi
 https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/1895f70b-c478-4b42-9134-4b6eee8742af
 
 ## 🔧 Technical Details
-SectionSeekerAI adopts an `embedding search technique` utilizing the `text-embedding-ada-002` model from OpenAI. It further integrates the `gpt-3.5-turbo-16k` model for `AI-driven filtering` during its learning journey. Such an approach empowers users to converse in natural language, breaking free from traditional tool constraints, like the `"find"` feature in standard browsers.
+SectionSeeker AI adopts an `embedding search technique` utilizing the `text-embedding-ada-002` model from OpenAI. It further integrates the `gpt-3.5-turbo-16k` model for `AI-driven filtering` during its learning journey. Such an approach empowers users to converse in natural language, breaking free from traditional tool constraints, like the `"find"` feature in standard browsers.
 
-## 📂 SectionSeekerAI Website Pages
+## 📂 SectionSeeker AI Website Pages
 1. **Contents Page**
    - Organize and manage with folders.
    - Ability to delete folders and remove uploaded documents.
@@ -24,7 +24,7 @@ SectionSeekerAI adopts an `embedding search technique` utilizing the `text-embed
    - Dive into a direct conversation with the search bot post-document upload.
 
 ## ⚡ Quick Start
-To test and try SectionSeekerAI:
+To test and try SectionSeeker AI:
 - **Hosted Site**: [https://lucasmys.pythonanywhere.com/login](https://lucasmys.pythonanywhere.com/login)
 - **Login Details**:
   - **Email**: sectionseekerai@gmail.com
@@ -50,21 +50,21 @@ To test and try SectionSeekerAI:
 1. Navigate to the chat page by clicking on "Chat" in the top navigation bar.
 2. Select one or multiple documents to pose questions.
 3. Click on "Ask" to submit your question. (Note: Pressing 'Enter' is not currently supported.)
-4. SectionSeekerAI will return the 5 most relevant sections. Each result will include:
+4. SectionSeeker AI will return the 5 most relevant sections. Each result will include:
    - The section name (indicating the document it originates from and its respective section name).
    - A relatedness score (in percentage).
-   - The actual text from the section identified by SectionSeekerAI.
+   - The actual text from the section identified by SectionSeeker AI.
 
 
-## Limitations of SectionSeekerAI for Documents
+## Limitations of SectionSeeker AI for Documents
 
-Please note the following constraints when using SectionSeekerAI:
+Please note the following constraints when using SectionSeeker AI:
 
-- **Development Stage**: As SectionSeekerAI is still in its early development stages, it currently supports only `.docx` file types.
+- **Development Stage**: As SectionSeeker AI is still in its early development stages, it currently supports only `.docx` file types.
   
 - **Document Complexity**: The tool may not function optimally with `.docx` files containing images or intricate structures. It is best suited for plain text documents. This is ideal for business-related documents like company handbooks or business agreements, which usually have a straightforward format.
   
-- **Styles Dependency**: SectionSeekerAI primarily uses heading styles to demarcate sections. If a `.docx` file has pre-existing styles that aren't correctly assigned, the tool might still process the document, but there might be unintended segmentations. For instance, what should be a single section might be split into two. As a result, when users search for specific sections based on queries, the returned results might not be entirely accurate.
+- **Styles Dependency**: SectionSeeker AI primarily uses heading styles to demarcate sections. If a `.docx` file has pre-existing styles that aren't correctly assigned, the tool might still process the document, but there might be unintended segmentations. For instance, what should be a single section might be split into two. As a result, when users search for specific sections based on queries, the returned results might not be entirely accurate.
 
 To achieve the best results, ensure your document adheres to the guidelines and is compatible with the tool's current capabilities.
 
@@ -75,5 +75,5 @@ To achieve the best results, ensure your document adheres to the guidelines and 
     - Contains files and folders for styling, web interface templates, user registration, search bot web endpoints, and more.
 
 ## 🔗 Extend or Clone the Project
-To expand upon or set up SectionSeekerAI on your local machine, check out the detailed installation guide on GitHub:
+To expand upon or set up SectionSeeker AI on your local machine, check out the detailed installation guide on GitHub:
 - [SectionSeekerAI Installation Guide](https://github.com/LucasMYS/SectionSeeker_AI/blob/main/SectionSeekerAI_Installation_Guide.md)
