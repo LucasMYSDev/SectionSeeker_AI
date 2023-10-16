@@ -41,6 +41,17 @@ To test and try SectionSeeker AI:
 
 ## 📖 How to Use
 
+### **Step 0**: Document Preprocessing
+
+- **Section Demarcation**: SectionSeeker AI predominantly uses heading styles for section identification. It harnesses the power of GPT to further refine and categorize large sections into sub-sections.
+- **Efficiency in Heading Styles**: Only a select number of heading styles need to be applied for optimal performance. However, it's noteworthy that enhancing the document with additional heading styles accelerates the SectionSeeker AI's processing speed.
+- **Performance Metrics**: As a benchmark, the example `.docx` file provided in the Quick Start section—with around 4,000 words and appropriate formatting—takes under 15 seconds for processing.
+- **Heading Style Recognition**: SectionSeeker AI recognizes lines as section headings if they employ Microsoft Word styles containing the terms "**Headings**" or "**SubTitle**". Below is an illustrative example of styles that SectionSeeker AI classifies as a heading:
+  
+  ![heading_style_example](https://github.com/LucasMYSDev/SectionSeeker_AI/assets/137337375/3d84de15-7027-4d65-95f7-09c83442637f)
+
+
+
 ### **Step 1**: Quick Start
 - Log in using the account details provided in the Quick Start section.
 
