@@ -41,8 +41,6 @@ To test and try SectionSeeker AI:
 
 ## 📖 How to Use
 
-## 📖 User Guide
-
 ### **Step 0**: Preparing Your Document
 
 - **Section Identification**: SectionSeeker AI primarily identifies sections through heading styles, but it also uses GPT to categorize larger sections into sub-sections.
